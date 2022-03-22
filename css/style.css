@@ -1,100 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
 
-*{
-	font-family: 'Comfortaa', cursive;
-	margin: 0;
-	padding: 0;
-}
-/*Animaciones*/
 
 
-/************************************/
-
-html{
-	font-size: 62.5%;
-}
-
-body{
-	overflow: auto;
-	max-width: 100%;
-    overflow-x: hidden;
-	background-color: rgba(242, 242, 242, 1);
-}
-h1,h2{
+h1,h2,h3,h4,h5{
 	color: black;
 	font-family: 'Comfortaa', cursive;
+	margin: 5px 0px;
 }
-p{
-	color:black;
-	line-height: 2rem;
-	font-size: 1.3rem;
-	text-align: center;
-}
-a{
-    text-decoration: none;
-    color: #5B5959;
-}
- a:hover{
-	color: black;
-	font-weight: 600;
-}
-
-/*Para el form *******************/
-
-.formulario{
-	display: flex;
-	justify-content:space-evenly;
-	align-items:center;
-	height:700px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: red;
-}
-
-label {
-  /*top,right,left,bottom*/
-    padding: 12px 12px 12px 0;   
-}
-/**********************************/ 
-     .logo{
-     	padding: 10px 0px;
-     }
+ 
 	.logo img{
-   	 height: 90px;
-     width: 220px;
+     width: 200px;
+     height: 70px;
    }
-   .buscar{
-   	display: flex;
-   	align-items: center;
-   	justify-content: space-between;
-   	padding: 10px 10px;
-   }
+   
    .regCarro{
    		display: flex;
    	    align-items:center;
-   	    justify-content: space-around;
-   	    padding: 10px 20px;
+   	    justify-content: flex-end;
    }
    .regCarro img:hover{
    		transform: skew(-20deg);
@@ -105,160 +28,70 @@ label {
    		display: flex;
    	    align-items:center;
    	    justify-content: space-between;
+   	    text-decoration: none;
+         color: #5B5959;
+         padding: 10px 10px;
    }
-
-    .encabezado{
-    	display: flex;
-    	align-items: center;
-    	justify-content: space-evenly;
-		background-color: white;
-	}
-
-    .botonera{
-		background: linear-gradient(to bottom, orange, yellow);
-		display: flex;
-		align-items: center;
-        justify-content: space-evenly;
-        
-	}
-		.botonera ul{
-			display: flex;
-			padding: 15px 0px;
-		}
-		.botonera ul li{
-			list-style: none;
-			margin-right: 50px;
-		}
-		.botonera ul li a{
-			font-size: 1.8rem;
-			text-decoration: none;
-			color: #5B5959;
-		}
-		.botonera nav ul li a:hover{
-			color: white;
-			font-weight: 600;
-		}
-
+   .regCarro a:hover{
+	color: black;
+	font-weight: 600;
+     }
+     #botonera{
+	  background-color:rgba(252, 170, 16,.8); 
+     }
+     #botonera div ul li a:hover{
+	  background-color:rgba(252, 150, 19,.9); 
+     }
 	.encabezadoCajagris{
-		text-align: center;
 		background-color: gray;
-		padding: 5px 0;
+		color:white;
+		height: 30px;
 	}
-
-	.imgFluid {
-	 width: 100%;
-	 }
-	 .imgPrincipal{
-	 	height: auto;
-		width: 100%;
-	 }
-
-	.pie{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		background-color: white;
-		padding: 10px 10px;
-	}
-	  .pie p{
-		text-align: center;
-		font-size: 1.2rem;
-		text-decoration: none;
-		color: #5B5959;
-		padding: 5px 5px;
-	    }
-	    .pie ul li{
-		  padding: 5px 5px;
-	    }
 
 	.redesExtras{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: center;
 		background-color: white;
-		 padding: 5px 10px;
 	}
-	  .redes{
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          padding: 5px 5px;
-         
-	  }
+	   .redes img{
+	      text-decoration: none;
+	      padding: 10px;
+		}
 	  .redes img:hover{
 		  transform: scale(1.2);
 		  cursor: pointer;
 		  transition: transform 1s;
 		}
-	  .extras{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 5px 10px;
-	  }
-
-	    .extras ul {
-	    	display: flex;
-	    	flex-direction: column;
-	    	align-items: flex-start;
-	    	justify-content: space-between;
-	    	
-	    }
-	    .extras ul li{
-	    	list-style: none;
-	    	padding: 5px 10px;
-			margin-right: 50px;
-	    	text-align: center;
-			font-size: 2rem;
-			color: #5B5959; 	
-	    }
-	    .extras h1{
-          font-size: 2rem;
-		   color: #5B5959; 	
-		   padding: 20px 10px;
-	    }
-
-	.pieIcono{
-	   width: 40px;
-	   text-decoration: none;
-	   padding: 30px;
-	}
+	 
 
     #productos h1,
     #productos h2{
     	text-transform: uppercase;
-		font-size: 3rem;
+		font-size: 1.5rem;
 		text-align: center;
 		padding: 15px 0;
 		background-color: orange;
 		font-family: Roboto, sans-serif;
-		margin: 20px 0;
     }
 	#productos .masVendidos{
-		margin: 20px;
 	    display: flex;
 	    flex-wrap: wrap;
 	    justify-content: space-evenly;
+	    background-color: rgba(242, 242, 242, 1);
 	    
 	}
 		#productos .masVendidos figure{
 			text-align: center;
 			padding: 20px 0px;
 		}
-
-			#productos .masVendidos figure img{
-				border-top-left-radius: 5px;
-				border-top-right-radius: 5px;
-			}
 			#productos .masVendidos figure img:hover{
 				transform: scale(1.2);
 				cursor: pointer;
 				transition: transform 1s;
 			}
 			
-
 			#productos .masVendidos figure figcaption{
 				font-size: 2rem;
 				color: black;
@@ -287,192 +120,7 @@ label {
 				align-items: center; 
 				
 			}
-		.secondNav{
-			background-color: white;
-			color:#676565 ;
-			padding: 10px ;
-			font-size: 1.3rem;
-			line-height: 1.6em;
-		}
 
-		.contenedor{
-			display: grid;
-			grid-auto-columns: 20vw 25vw 25vw 30vw;
-			grid-auto-rows: auto;
-			grid-template-areas: "header header header header" "logo buscar buscar user " "nav nav nav nav" " img img img img" 
-			"productos productos productos productos" "footer footer rExt rExt";
-		}
+		
 
-		#header{
-			grid-area: header;
-		}
-		#buscar{
-			grid-area: buscar;
-		}
-		#logo{
-			grid-area: logo;
-		}
-		#userImg{
-			grid-area: user;
-		}
-		#mainNav{
-			grid-area: nav;
-		}
-		#imagenEncabezado{
-			grid-area: img;
-		}
-		#filtros{
-			grid-area: filtros;
-		}
-
-		#productos{
-			grid-area: productos;
-		}
-
-		#aside{
-			grid-area: aside;
-		}
-
-		#footer{
-			grid-area: footer;
-		}
-		#rExtras{
-			grid-area: rExt;
-		}
-
-@media (max-width: 653px){
-	.contenedor{
-		display: grid;
-			grid-auto-columns: 1fr ;
-			grid-auto-rows: auto;
-			grid-template-areas: "header" "logo" "buscar" "user" "nav" "img" 
-			"productos" "footer" "rExt";
-	}
-	  .formulario{
-	     height:600px;
-	     width: 90%;
-	    border-radius: 5px;
-	    background-color: #f2f2f2;
-	    padding: 20px;
-	}
-
-	input[type=text], select, textarea {
-	    width: 100%;
-	    padding: 5px;
-	    border: 1px solid #ccc;
-	    border-radius: 4px;
-	}
-	 
-      label {
-       padding: 10px 10px;  
-      } 
-      .buscar h2{
-      	font-size: 1.4rem;
-      }
-	    .regCarro h3{
-	   		font-size: 0.8rem;
-	   }
-	   .regCarro img{
-	   		height: 30px;
-	   		width: 30px;
-	   }
-
-		.botonera ul{
-			display: flex;
-			padding: 10px 0px;
-		}
-		.botonera ul li{
-			list-style: none;
-			margin-right: 30px;
-		}
-		.botonera ul li a{
-			font-size: 1rem;
-			text-decoration: none;
-			color: #5B5959;
-		}
-		#productos h1,
-	    #productos h2{
-	    	text-transform: uppercase;
-			font-size: 1.5rem;
-			text-align: center;
-			padding: 15px 0;
-			background-color: orange;
-			font-family: Roboto, sans-serif;
-	    }
-	       #productos .masVendidos{
-		    display: flex;
-		    flex-direction: column;
-		     align-items: center;		    
-		}
-				#productos .masVendidos figure img{
-					width: 90%;
-				}
-
-				#productos .masVendidos figure figcaption{
-					font-size: 1.5rem;
-					color: #BD5EF3 ;
-					padding: 10px 0;
-					background-color: white;
-					text-align: center;
-				}
-
-				#productos .masVendidos p.price{
-					font-size: 1.5rem;
-					color: black;
-					background-color: white;
-				}
-
-				#productos .masVendidos a.btn{
-					width:200px;
-					height:50px;
-					margin-left: 50px;
-					font-size: 1rem;
-					display: flex;
-					justify-content: center;
-					align-items: center; 
-					
-				}
-
-	  .redes{
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          padding: 5px 5px;      
-	  }
-	  .redes h1{
-        font-size: 1.4rem;
-	  }
-	  .extras{
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          padding: 5px 10px;
-	  }
-	   .extras ul{
-	    
-	   }
-	    .extras ul li{
-	    	list-style: none;
-	    	padding: 5px 0px;
-			margin-right: 50px;
-	    	text-align: center;
-			font-size: 1rem;
-			color: #5B5959; 	
-	    }
-	    .extras li a{
-	    	font-size: 0.8rem;
-	    }
-	    .extras h1{
-          font-size: 1rem;
-		   color: #5B5959; 	
-		   padding: 10px 5px;
-	    }
-	    .pieIcono{
-		   width: 30px;
-		   text-decoration: none;
-		   padding: 10px;
-		}
-
-
-}
 
