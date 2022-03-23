@@ -8,6 +8,14 @@ h1,h2,h3,h4,h5{
 	font-family: 'Comfortaa', cursive;
 	margin: 5px 0px;
 }
+h1,h2,h3,h4,h5:first-letter{
+  text-transform: uppercase;
+}
+p:first-letter{
+	text-transform: uppercase;
+ 	font-size: 1.2em;
+ 	font-weight: 600;
+ }
  
 	.logo img{
      width: 200px;
