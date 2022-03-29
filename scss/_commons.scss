@@ -1,0 +1,119 @@
+//mixins
+@mixin texto($font-size, $line-height, $color){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+	padding: 5px;
+
+}
+
+@mixin flex($justify,$align){
+	display: flex;
+	justify-content: $justify;
+	align-items:$align;
+}
+
+
+.logo img{
+     width: 200px;
+     height: 70px;
+   }
+   
+   .regCarro{
+   	    @include flex(center,flex-end);
+   	     & img:hover{
+				 transform: skew(-20deg);
+				 cursor: pointer;
+				 transition: transform 3s;
+                }
+   }
+   
+    .regCarro a{
+   	    @include flex(space-between,center);
+   	    text-decoration: none;
+         color: #5B5959;
+         padding: 10px 10px;
+          & a:hover{
+			color: grey;
+			font-weight: 600;
+          }
+   }
+  
+     #botonera{
+	  background-color:rgba(252, 170, 16,.8); 
+	     & div ul li a:hover{
+			  background-color:rgba(252, 150, 19,.9); 
+		     }
+     }
+	.encabezadoCajagris{
+		background-color: gray;
+		color:white;
+		height: 30px;
+	}
+
+	.redesExtras{
+		@include flex(center,center);
+		flex-direction: column;
+		background-color: white;
+	}
+	   .redes img{
+	      text-decoration: none;
+	      padding: 10px;
+	        &hover{
+				  transform: scale(1.2);
+		          cursor: pointer;
+		          transition: transform 1s;
+                }
+		}
+
+	 
+    #productos h1,
+    #productos h2{
+    	text-transform: uppercase;
+		font-size: 1.5rem;
+		text-align: center;
+		padding: 15px 0;
+		background-color: orange;
+		font-family: $fontMain;
+    }
+	#productos .masVendidos{
+	    @include flex(space-evenly,center);
+	    flex-wrap: wrap;
+	    background-color: rgba(242, 242, 242, 1);	    
+	}
+		#productos .masVendidos figure{
+			text-align: center;
+			padding: 20px 0px;
+		}
+			#productos .masVendidos figure img:hover{
+				transform: scale(1.2);
+				cursor: pointer;
+				transition: transform 1s;
+			}
+			
+			#productos .masVendidos figure figcaption{
+				font-size: 2rem;
+				color: black;
+				padding: 20px 0;
+				background-color: white;
+			}
+
+			#productos .masVendidos p.price{
+				color: black;
+				padding-bottom: 10px;
+				background-color: white;
+			}
+
+			#productos .masVendidos a.btn{
+				width:200px;
+				height:50px;
+				background-color: red;
+				color:white;
+				text-align: center;
+				text-decoration: none;
+				border-radius: 5px;
+				margin-left: 50px;
+				font-size: 1rem;
+			    @include flex(center,center);				
+			}
+
