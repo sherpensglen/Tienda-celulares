@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,8 @@
 
 .logo img {
   width: 200px;
-  height: 70px; }
+  height: auto;
+  padding: 10px 10px; }
 
 .regCarro {
   display: flex;
@@ -25,14 +28,49 @@
   text-decoration: none;
   color: #5B5959;
   padding: 10px 10px; }
-  .regCarro a a:hover {
+  .regCarro a:hover {
     color: grey;
     font-weight: 600; }
 
-#botonera {
-  background-color: rgba(252, 170, 16, 0.8); }
-  #botonera div ul li a:hover {
-    background-color: rgba(252, 150, 19, 0.9); }
+#botonera, #botoneraTitulo {
+  background-color: #6610f2;
+  opacity: 0.9; }
+  #botonera div ul li a:hover, #botoneraTitulo div ul li a:hover {
+    background-color: black; }
+
+#botonera div ul li a, #botoneraTitulo div ul li a {
+  border-radius: 20px; }
+
+#botoneraTitulo h1 {
+  font-family: "Noto Serif", serif;
+  color: white;
+  font-weight: 600; }
+
+#botoneraDetalles {
+  background-color: #FAFAFA;
+  opacity: 0.9; }
+
+#botoneraDetalles div ul li a {
+  color: grey;
+  text-decoration: none; }
+
+#botoneraDetalles div ul li a:hover {
+  background-color: #F4F4F4;
+  opacity: 0.8;
+  color: black;
+  font-weight: 600;
+  cursor: pointer; }
+
+.detalles p {
+  font-size: 1.2em;
+  line-height: 1em;
+  color: black;
+  padding: 5px;
+  font-family: "Hind", sans-serif; }
+
+#Importante {
+  font-weight: 600;
+  color: #6610f2; }
 
 .encabezadoCajagris {
   background-color: gray;
@@ -49,18 +87,24 @@
 .redes img {
   text-decoration: none;
   padding: 10px; }
-  .redes imghover {
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: transform 1s; }
+
+.redes img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 1s; }
+
+#formContainer {
+  background-color: #E3E3E2;
+  opacity: 0.8; }
 
 #productos h1,
 #productos h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
+  color: white;
   padding: 15px 0;
-  background-color: orange;
+  background-color: black;
   font-family: "Roboto", sans-serif; }
 
 #productos .masVendidos {
@@ -93,7 +137,8 @@
 #productos .masVendidos a.btn {
   width: 200px;
   height: 50px;
-  background-color: red;
+  background-color: black;
+  font-family: "Hind", sans-serif;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -115,10 +160,3 @@ h1, h2, h3, h4, h5 {
 
 h1, h2, h3, h4, h5:first-letter {
   text-transform: uppercase; }
-
-p:first-letter {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  font-weight: 600;
-  line-height: 1.3em;
-  margin-bottom: 2em; }

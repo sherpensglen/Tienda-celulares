@@ -4,7 +4,6 @@
 	line-height: $line-height;
 	color: $color;
 	padding: 5px;
-
 }
 
 @mixin flex($justify,$align){
@@ -13,10 +12,16 @@
 	align-items:$align;
 }
 
+$paleta:(
+	'uno': #FAFAFA,
+    'dos': #F4F4F4,
+    'tres':#6610f2,
+    'cuatro':#E3E3E2,);
 
 .logo img{
      width: 200px;
-     height: 70px;
+     height: auto;
+     padding: 10px 10px;
    }
    
    .regCarro{
@@ -33,17 +38,52 @@
    	    text-decoration: none;
          color: #5B5959;
          padding: 10px 10px;
-          & a:hover{
+          &:hover{
 			color: grey;
 			font-weight: 600;
           }
    }
   
      #botonera{
-	  background-color:rgba(252, 170, 16,.8); 
+	  background-color:map-get($map:$paleta,$key:'tres');
+	  opacity: 0.9;
 	     & div ul li a:hover{
-			  background-color:rgba(252, 150, 19,.9); 
+			  background-color:black; 
 		     }
+     }
+     #botonera div ul li a{
+       border-radius: 20px;
+     }
+     #botoneraTitulo{
+	   @extend #botonera;
+     }
+     #botoneraTitulo h1{
+     	font-family: $fontTitle;
+     	color: white;
+     	font-weight: 600;
+     }
+     #botoneraDetalles{
+	  background-color:map-get($map:$paleta,$key:'uno');
+	  opacity: 0.9;
+     }
+     #botoneraDetalles div ul li a{
+        color:grey;
+      	text-decoration: none;
+     }
+     #botoneraDetalles div ul li a:hover{
+	     background-color:map-get($map:$paleta,$key:'dos');
+	     opacity: 0.8;
+		color:black;
+	    font-weight: 600;
+	    cursor: pointer;
+	}
+     .detalles p{
+     	@include texto(1.2em,1em,black);
+        font-family:$fontP; 
+     }
+     #Importante{
+     	font-weight: 600;
+     	color:map-get($map:$paleta,$key:'tres');
      }
 	.encabezadoCajagris{
 		background-color: gray;
@@ -59,21 +99,25 @@
 	   .redes img{
 	      text-decoration: none;
 	      padding: 10px;
-	        &hover{
-				  transform: scale(1.2);
-		          cursor: pointer;
-		          transition: transform 1s;
-                }
 		}
-
+		.redes img:hover{
+		    transform: scale(1.2);
+		    cursor: pointer;
+		    transition: transform 1s;
+        }
+      #formContainer{
+      	background-color:map-get($map:$paleta,$key:'cuatro');
+      	opacity: 0.8;
+      }
 	 
     #productos h1,
     #productos h2{
     	text-transform: uppercase;
 		font-size: 1.5rem;
 		text-align: center;
+		color: white;
 		padding: 15px 0;
-		background-color: orange;
+		background-color:black;
 		font-family: $fontMain;
     }
 	#productos .masVendidos{
@@ -107,7 +151,8 @@
 			#productos .masVendidos a.btn{
 				width:200px;
 				height:50px;
-				background-color: red;
+				background-color: black;
+				font-family: $fontP;
 				color:white;
 				text-align: center;
 				text-decoration: none;
