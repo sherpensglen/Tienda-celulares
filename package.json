@@ -1,7 +1,7 @@
 {
   "name": "tiendacelularesalfonsocastanonmejia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina de celulares y electronios Celkap",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
