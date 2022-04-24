@@ -18,7 +18,9 @@
 <!-- Inicia el header -->
 <header>
   <div class="contenedor">
-	<div class="text-center encabezadoCajagris"><p>Si tienes algun problema comunicate al 771556434</p></div> 
+	 <div class="d-block text-center encabezadoContacto">
+   	    <p><marquee direction="right">Si tienes algun problema comunicate al 771556434</marquee></p>
+     </div> 
      <div class="container-fluid p-3">
    	 <div class="row d-flex align-items-center justify-content-center">
    	 	<div class="col-lg-8">
@@ -28,18 +30,19 @@
 			 </form>
    	 	</div>
    	    <div class="col-lg-4 pt-2 regCarro">
-   	  	   <a href="#"> <img src="img/registro.png" alt="Acceder o registrarse">Acceder o registrarse</a>
+   	  	   <a href="usuario/login.html"> <img src="img/registro.png" alt="Acceder o registrarse">Acceder o registrarse</a>
            <a href="#"><img src="img/carrito.png" alt="Mi carrito">Mi carrito</a>
        </div>
       </div>
     </div>
+   </div>
   </header>
    <!-- Termina el header -->
    <!-- Inicia el nav-->
-           <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0 m-0 "id="botonera">
+           <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0 m-0" id="botonera">
 				  <div class="container-fluid d-flex align-items-center">
 				    <a class="navbar-brand logo  p-0 m-0" href="index.html">
-				      <img class="rounded" src="img/logo.svg" alt="logo de la empresa Celkap">
+				      <img class="rounded" src="img/logo2.svg" alt="Logo de celkap">
 				    </a>
 				    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				      <span class="navbar-toggler-icon"></span>
@@ -64,10 +67,10 @@
 				</nav>
 	<!-- Termina el nav-->
    <!-- Inicia el main -->
-   <main>  
-        <div class="container-fluid d-flex align-items-center justify-content-center py-5  ">
+   <main class="fondoContacto">  
+        <div class="container-fluid d-flex align-items-center justify-content-center py-5">
            <div class="row rounded p-3 m-2" id="formContainer">
-        	 <h1>Contacto</h1>
+        	 <h1 class="fw-bold ">Contacto</h1>
 			 <form method="post" action="#" >
 			 	<div class="form-group py-2 px-2">
 			        <label for="fname">Nombre</label>			      
@@ -90,7 +93,7 @@
 			        <textarea id="subject" name="subject" placeholder="Asunto....." style=" " class="form-control"></textarea>
 			    </div>
 			        <div class="d-flex align-items-center justify-content-center py-3">
-			        	 <input class="btn btn-dark " type="submit"  value="Enviar">
+			        	 <input class="btn btn-dark botonForm" type="submit"  value="Enviar">
 			        </div>
 			          
 			  </form>
@@ -99,25 +102,27 @@
    </main> 
    <!-- Termina el main -->
 <!-- Inicia el footer -->
-   <footer>
-   <div class="container-fluid">
+   <footer >
+    <div class="container-fluid pb-2">
         <div class="row d-flex align-items-center justify-content-space-evenly ">
-       	    <div class="col-md-5 d-flex flex-wrap align-items-center justify-content-center py-2"> 
-       	    	   <a href="index.html" class="logo"> <img src="img/logo.svg" alt="logo de la empresa Celkap"></a>
+       	    <div class="col-md-5 d-flex flex-wrap align-items-center justify-content-center py-1 px-4"> 
+       	    	   <a href="index.html" class="logo"> <img src="img/logo.svg" alt="logo de Celkap"></a>
 		       	   <p class="text-center pt-2">Más productos,secciones exclusivas,las mejores marcas, estratégicamente ubicados en el centro del país, desplazamos con gran velocidad los productos hasta la comodidad de tu hogar.</p>
 		       	  	<ul>
-						<li>Teléfono atención: 771 475 07 00</li>
+						<li>Teléfono atención: 771 475 07 00 </li>
 						<li>Horario: de Lunes a Viernes de 9:00 a  6pm Sábados de 10:00 a 2:00 pm</li>
-						<li>Email: info@CelKap.mx</h6></li>
+						<li>Email: info@CelKap.mx</li>
 						<li>Dirección: trueno Col. San Cayetano, Pachuca, Hgo. México</li>
 					</ul>      			
 		      </div>
             <div class="redesExtras col-md-7">
-       	        <div class="d-flex flex-wrap align-items-center justify-content-space-around px-1 py-1 redes">
-			       	 <h5>Siguenos en nuestras redes</h5>
-			       	 <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Seguinos en facebook"></a>
-					 <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Seguinos en twitter"></a>
-				     <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Seguinos en instagram"></a>
+       	        <div class="d-flex flex-wrap align-items-center justify-content-space-around px-1 py-4 redes ">
+			       	 <h5 class="col-lg-6 text-center" >Siguenos en nuestras redes</h5>
+			       	 <div class="col-lg-6 d-flex">
+			       	 	<a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Seguinos en facebook"></a>
+						 <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Seguinos en twitter"></a>
+					     <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Seguinos en instagram"></a>
+			       	 </div>
 				</div>
 		        <div class="d-flex align-items-center justify-content-space-evenly px-1 py-1">
 					<div class="list-group px-2 list-group-flush">
@@ -136,7 +141,7 @@
             </div>
         </div>
     </div>
- </footer>
+  </footer>
  <!-- Termina el footer -->
  <!-- scripts -->
    <script src="js/bootstrap.min.js"></script>

@@ -17,7 +17,9 @@
 <body>
 <!-- Inicia el header -->
   <header>
-	<div class="text-center encabezadoCajagris"><p>Si tienes algun problema comunicate al 771556434</p></div> 
+   <div class="d-block text-center encabezadoContacto">
+   	 <p><marquee direction="right">Si tienes algun problema comunicate al 771556434</marquee></p>
+   </div>  
    <div class="container-fluid p-3">
    	 <div class="row d-flex align-items-center justify-content-center">
    	 	<div class="col-lg-8">
@@ -27,18 +29,18 @@
 			 </form>
    	 	</div>
    	    <div class="col-lg-4 pt-2 regCarro">
-   	  	   <a href="#"> <img src="img/registro.png" alt="Acceder o registrarse">Acceder o registrarse</a>
+   	  	   <a href="usuario/login.html"> <img src="img/registro.png" alt="Acceder o registrarse">Acceder o registrarse</a>
            <a href="#"><img src="img/carrito.png" alt="Mi carrito">Mi carrito</a>
        </div>
       </div>
     </div>
   </header>
   <!-- Termina el header -->
- 	<!-- Inicia el nav --->
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0 m-0 "id="botonera">
+ 	<!-- Inicia el nav -->
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0 m-0" id="botonera">
 				  <div class="container-fluid d-flex align-items-center">
 				    <a class="navbar-brand logo  p-0 m-0" href="index.html">
-				      <img class="rounded" src="img/logo.svg" alt="Logo de la empresa Celkap">
+				      <img class="rounded" src="img/logo2.svg" alt="Logo de celkap">
 				    </a>
 				    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				      <span class="navbar-toggler-icon"></span>
@@ -64,108 +66,175 @@
 	<!-- Termina el nav -->
    <!-- Inicia el main -->
   <main>
-    <!-- banner --->
-		 <img src="img/gadgets.png" class="d-block w-100" alt="Banner de la pagina de gadgets">
-		 
-  <div class="container-fluid">
+    <!-- banner -->
+   <img src="img/gadgets.png" class="d-block w-100" alt="Banner de la pagina de gadgets">		 
+   <div class="container-fluid">
   <!-- Inicia el side bar -->	
-  	<div class="row" >
-  	   <div class="col-md-3 col-lg-2 d-flex align-items-center justify-content-center">
-  	   	  <nav class=" d-flex align-items-center flex-column justify-content-space-around">
-				<form class="py-2">
-					<select class="custom-select">
-						<option selected>Categorias de Gadgets</option>
-						<option value="marcas">Tipo</option>
-						<option value="marcas">Marcas</option>
-						<option value="precios">Precios</option>
-					</select>
-				</form>
-				  <ul class="list-group py-2">
-					  <li class="list-group-item">Bands</li>
-					  <li class="list-group-item">Drones</li>
-					  <li class="list-group-item">Lamparas</li>
-					  <li class="list-group-item">Cargadores</li>
-					  <li class="list-group-item">Powebanks</li>
-					   <li class="list-group-item">Ventiladores</li>
-					  <li class="list-group-item">Audifonos</li>				
-				 </ul>
-					
-			</nav>		
-  	   </div>
-         <!-- Termina el sidebar -->	
+  	 <div class="row" >
+  <!-- Inicia el side bar -->	
+  	   <div class="col-md-3 col-lg-3 d-flex flex-column  justify-content-baseline pt-5 ">
+  	   	  <h1 id="textoImportante" class="text-center fs-3  pt-lg-4 mt-lg-4">Gadgets</h1>
+  	   	  <p class="text-center fs-4 pt-lg-4 mt-lg-4 pb-1">Filtrado por:</p>
+  	   	  <label for="customRange2" class="form-label pt-lg-2 "><p class="pb-0 m-0 text-center">Gama de Precios</p></label>
+          <input type="range" class="form-range " min="0" max="5" id="customRange2">
+          <p class="text-end">1000$-25000$</p>
+     <!-- Inicia el dropdown 1 -->	         
+          <div class="dropdown pt-5 pb-4">
+			  <button class="btn btn-dark dropdown-toggle btn-lg w-100 text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Marcas</button>
+			  <ul class="dropdown-menu dropdown-menu-dark w-100" aria-labelledby="dropdownMenuButton2">
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Xiaomi
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Roku
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">DJI
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Amazon
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Apple
+			    </li>
+			  </ul>
+			</div>  
+        <!-- Inicia el dropdown 2 -->	     
+            <div class="dropdown py-4">
+			  <button class="btn btn-dark dropdown-toggle btn-lg w-100 text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Microfono</button>
+			  <ul class="dropdown-menu dropdown-menu-dark w-100" aria-labelledby="dropdownMenuButton2">
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Si
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">No
+			    </li>
+			  </ul>
+			</div>
+  <!-- Inicia el dropdown 3 -->	
+			<div class="dropdown py-4">
+			  <button class="btn btn-dark dropdown-toggle btn-lg w-100 text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Pantalla</button>
+			  <ul class="dropdown-menu dropdown-menu-dark w-100" aria-labelledby="dropdownMenuButton2">
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">LCD de 3 colores
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">AMOLED
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">IPS
+			    </li>
+			     <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Super AMOLED
+			    </li>
+			  </ul>
+			</div>
+  <!-- Inicia el dropdown 4 -->	
+			<div class="dropdown py-4">
+			  <button class="btn btn-dark dropdown-toggle btn-lg w-100 text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Color</button>
+			  <ul class="dropdown-menu dropdown-menu-dark w-100" aria-labelledby="dropdownMenuButton2">
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Negro
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Gris
+			    </li>
+			    <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Blanco
+			    </li>
+			     <li class="dropdown-item">
+			    	<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Cafe
+			    </li>
+			  </ul>
+			</div>
+  	    </div>
+  	   <!-- Termina el sidebar -->	
         <!-- Inician los productos -->	
-  	    <div id="productos" class="col-md-9 col-lg-10 container-fluid m-0 px-0 py-5">
-			<h1>Gadgets</h1>
-		    <section class="masVendidos">			
-				<figure class="figure">
-					<img class="figure-img img-fluid rounded" src="img/audifonos2.jpg" alt="Xiaomi Audífonos True Wireless Earbuds">
-					<figcaption class="figure-caption text-right">Xiaomi Audífonos twe</figcaption>
-					<p class="price">$452,00</p>
-					<a href="#" class="btn">Añadir al carrito</a>
-				</figure>
+  	    <div id="productos" class="col-md-9 col-lg-9 container-fluid m-0 px-0 pt-0 pb-0">
+  	    	<div class="row m-0 px-0 pt-1 pb-0">
+  	    	    <div class="continer-fluid  d-flex align-items-center justify-content-end">
+  	    	    	<p class="px-2 pt-3">Ordenar por:</p>	
+  	    		     <select class="custom-select px-4 text-start">
+						<option selected>Categorias</option>
+						<option value="marcas">Ventas</option>
+						<option value="reciente">Más recientes</option>
+						<option value="preciob">Precio más bajo</option>
+						<option value="precioa">Precio más alto</option>
+						<option value="Descuento">Descuento</option>
+					</select>		
+  	    		</div>
+  	    	</div>
+		    <section class="masVendidos pt-3">	
+		            <figure>
+						<img src="img/gadget1.jpg" alt="Amazon Echo Alexa">
+						<figcaption>Amazon Echo Alexa</figcaption>
+						<p class="price">$1,999,00</p>
+						<a href="#" class="btn">Añadir al carrito</a>
+					</figure>
 
-				<figure>
-					<img src="img/phone1.jpg" alt="Poco X3 Pro" >
-					<figcaption>Poco X3 Pro</figcaption>
-					<p class="price">$6,989,00</p>
-					<a href="#" class="btn">Añadir al carrito</a>
-				</figure>
+					<figure>
+						<img src="img/gadget2.jpg" alt="Roku express 4K" >
+						<figcaption>Roku express 4K</figcaption>
+						<p class="price">$999,00</p>
+						<a href="#" class="btn">Añadir al carrito</a>
+					</figure>
 
-				<figure>
-					<img src="img/band.jpg" alt="Xiaomi Mi Band 6">
-					<figcaption>Xiaomi Mi Band 6</figcaption>
-					<p class="price">$1.990,00</p>
-					<a href="#" class="btn">Añadir al carrito</a>
-				</figure>
-			</section>	
-			<section class="masVendidos">			
-				<figure class="figure">
-					<img class="figure-img img-fluid rounded" src="img/audifonos2.jpg" alt="Xiaomi Audífonos True Wireless Earbuds">
-					<figcaption class="figure-caption text-right">Xiaomi Audífonos twe</figcaption>
-					<p class="price">$452,00</p>
-					<a href="#" class="btn">Añadir al carrito</a>
-				</figure>
+					<figure>
+						<img src="img/gadget3.jpg" alt="DJI Mavic Mini">
+						<figcaption>DJI Mavic Mini</figcaption>
+						<p class="price">$13,999,00</p>
+						<a href="#" class="btn">Añadir al carrito</a>
+					</figure>					
+					<figure>
+						<img src="img/audifonos2.jpg" alt="Xiaomi Audífonos">
+						<figcaption>Xiaomi Audífonos twe</figcaption>
+						<p class="price">$452,00</p>
+						<a href="#" class="btn">Añadir al carrito</a>
+					</figure>
 
-				<figure>
-					<img src="img/phone1.jpg" alt="Poco X3 Pro" >
-					<figcaption>Poco X3 Pro</figcaption>
-					<p class="price">$6,989,00</p>
-					<a href="#" class="btn">Añadir al carrito</a>
-				</figure>
+                    <figure>
+						<img src="img/band.jpg" alt="Xiaomi Mi Band 6">
+						<figcaption>Xiaomi Mi Band 6</figcaption>
+						<p class="price">$1.990,00</p>
+						<a href="#" class="btn">Añadir al carrito</a>
+					</figure>
 
-				<figure>
-					<img src="img/band.jpg" alt="Xiaomi Mi Band 6">
-					<figcaption>Xiaomi Mi Band 6</figcaption>
-					<p class="price">$1.990,00</p>
-					<a href="#" class="btn">Añadir al carrito</a>
-				</figure>
-			</section>	
-		</div> 
-  	</div>
-  </div>
+					<figure>
+						<img src="img/band2.jpg" alt="Xiaomi Mi Band 5">
+						<figcaption>Xiaomi Mi Band 5</figcaption>
+						<p class="price">$799,00</p>
+						<a href="#" class="btn">Añadir al carrito</a>
+					</figure>
+
+				</section>	
+		  </div> 
+  	   </div>
+    </div>
    <!-- Terminan los productos-->
 </main>	
 <!-- Termina el main -->
 <!-- Inicia el footer -->
-<footer>
-<div class="container-fluid">
+<footer >
+    <div class="container-fluid pb-2">
         <div class="row d-flex align-items-center justify-content-space-evenly ">
-       	    <div class="col-md-5 d-flex flex-wrap align-items-center justify-content-center py-2"> 
-       	    	   <a href="index.html" class="logo"> <img src="img/logo.svg" alt="logo de la empresa Celkap"></a>
+       	    <div class="col-md-5 d-flex flex-wrap align-items-center justify-content-center py-1 px-4"> 
+       	    	   <a href="index.html" class="logo"> <img src="img/logo.svg" alt="logo de Celkap"></a>
 		       	   <p class="text-center pt-2">Más productos,secciones exclusivas,las mejores marcas, estratégicamente ubicados en el centro del país, desplazamos con gran velocidad los productos hasta la comodidad de tu hogar.</p>
 		       	  	<ul>
 						<li>Teléfono atención: 771 475 07 00 </li>
-						<li>Horario: de Lunes a Viernes de 9:00 a  6pm Sábados de 10:00 a 2:00 pm</h6></li>
+						<li>Horario: de Lunes a Viernes de 9:00 a  6pm Sábados de 10:00 a 2:00 pm</li>
 						<li>Email: info@CelKap.mx</li>
 						<li>Dirección: trueno Col. San Cayetano, Pachuca, Hgo. México</li>
 					</ul>      			
 		      </div>
             <div class="redesExtras col-md-7">
-       	        <div class="d-flex flex-wrap align-items-center justify-content-space-around px-1 py-1 redes">
-			       	 <h5>Siguenos en nuestras redes</h5>
-			       	 <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Seguinos en facebook"></a>
-					 <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Seguinos en twitter"></a>
-				     <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Seguinos en instagram"></a>
+       	        <div class="d-flex flex-wrap align-items-center justify-content-space-around px-1 py-4 redes ">
+			       	 <h5 class="col-lg-6 text-center" >Siguenos en nuestras redes</h5>
+			       	 <div class="col-lg-6 d-flex">
+			       	 	<a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Seguinos en facebook"></a>
+						 <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Seguinos en twitter"></a>
+					     <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Seguinos en instagram"></a>
+			       	 </div>
 				</div>
 		        <div class="d-flex align-items-center justify-content-space-evenly px-1 py-1">
 					<div class="list-group px-2 list-group-flush">
@@ -184,10 +253,10 @@
             </div>
         </div>
     </div>
- </footer>
+  </footer>
    <!-- Termina el footer -->
  <!-- scripts -->
-   <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
    <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
